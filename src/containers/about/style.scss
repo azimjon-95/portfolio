@@ -1,0 +1,28 @@
+.about{
+    &_content{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+
+        &_personalWrapper, &_servicesWrapper{
+            width: 50%;
+        }
+        &_personalWrapper{
+            h3{
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--color-main);
+
+            }
+            h3.personalText{
+                padding-top: 20px;
+            }
+            p{
+                color: var(--color-main);
+
+            }
+        }
+    }
+}

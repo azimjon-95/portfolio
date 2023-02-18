@@ -1,0 +1,113 @@
+.navbar{
+    background: var(--color-nav-bg);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+
+    &_conatiner{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit ;
+        padding: 0 20px;
+        float: 1;
+
+        &_logo{
+            color: var(--color-main);
+            cursor: pointer;
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            font-size: 20px;
+            align-items:center;
+            justify-content: center;
+            position: relative;
+            width: 123px;
+            height: 25px;
+            font-weight: 600;
+
+            &_left{
+                font-size: 30px;
+                position: absolute;
+                left: -6px;
+            }
+            &_right{
+                font-size: 30px;
+                position: absolute;
+                right: -4px;
+            }
+        }
+
+
+        &_menu{
+            display: flex;
+            text-align: center;
+            list-style-type: none;
+
+            &_item{
+                line-height: 25px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: transparent;
+                    transition:  all 0.5s ease;
+                }
+
+                &:hover::after{
+                    width: 100%;
+                    background: var(--color-main);
+                }
+
+                &_links{
+                    color: var(--color-main);
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+};
+
+.nav-icon{
+    display: none;
+}
+
+@media screen and (max-width: 770px){
+    .navbar_conatiner_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active{
+            background: var( --color-nav-bg);
+            left: 0;
+            opacity: 1;
+        }
+        &_item{
+            border-bottom: 1px solid #282828;
+            margin: 0;
+            padding: 20px 0;
+        }
+    }
+    .nav-icon{
+        display:block;
+        padding-right: 20px;
+        cursor: pointer;
+        color: var(--color-main);
+    }
+}
