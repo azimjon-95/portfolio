@@ -1,0 +1,37 @@
+.style_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &_wrapper{
+        width: 250px;
+        overflow: hidden;
+        margin-top: 22px;
+
+        h2{
+            font-size: 27px;
+            padding: 4px 10px;
+            border-radius: 15px;
+            color: var(--color-main);
+            border-bottom: 4px solid var(--color-main);
+        }
+
+        ul {
+            list-style-type: none;
+        overflow: hidden;
+            li{
+                font-size: 19px;
+                color: var(--color-main);
+                display: flex;
+                align-items: center;
+                line-height: 40px;
+
+                svg{
+                    font-size: 26px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

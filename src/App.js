@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particles from "./utils/particles";
@@ -16,6 +16,7 @@ const App = () => {
   const handleInit = async (main) => {
     await loadFull(main);
   };
+  const [toggleIcon, setToggleIcon] = useState(false);
 
   const location = useLocation();
 
@@ -26,11 +27,11 @@ const App = () => {
         <Particles id="particles" options={particles} init={handleInit} />
       )}
 
-      <Navbar />
+      <Navbar toggleIcon={toggleIcon} setToggleIcon={setToggleIcon} />
 
       <div className="App_main-page-content">
         <Routes>
-          <Route index path="/" element={<Home />} />
+          <Route index path="/" element={<Home toggleIcon={toggleIcon} />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
