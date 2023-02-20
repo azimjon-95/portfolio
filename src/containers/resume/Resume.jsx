@@ -3,6 +3,7 @@ import "./style.scss";
 import Header from "../../components/pageHeaderContent/Header";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdWork } from "react-icons/md";
+import { FaUserGraduate } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -61,7 +62,7 @@ const Resume = () => {
                     color: "var(--color-text)",
                     border: "1.5px solid var(--color-main)",
                   }}
-                  icon={<MdWork />}
+                  icon={<FaUserGraduate />}
                   iconStyle={{
                     background: "#181818",
                     color: "var(--color-main)",

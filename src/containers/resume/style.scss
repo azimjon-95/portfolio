@@ -86,13 +86,13 @@
         }
     }
 
-    @media only screen and (max-width: 768px) {
-        .timeline{
-            flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+    .timeline{
+        flex-direction: column;
 
-            &_experience, &_education{
-                width: 100%;
-            }
+        &_experience, &_education{
+            width: 100%;
         }
     }
 }
