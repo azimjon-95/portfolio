@@ -1,6 +1,7 @@
 .wrapper{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     border-bottom: 1px dashed var(--color-main);
 
@@ -18,5 +19,15 @@
         svg{
             color: var(--color-main);
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper{
+
+        h2{
+            font-size: 26px;
+        }
+     
     }
 }

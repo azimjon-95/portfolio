@@ -38,19 +38,40 @@
         display: flex;
         justify-content: center;
 
-        button{
+        a{
             cursor: pointer;
-            padding: 10px 70px;
+            padding: 10px 50px;
             margin: 10px 20px;
             font-size: 2rem;
             background-color: transparent;
             border: 1.5px solid var(--color-main);
             color:  var(--color-main);
             font-weight: 500;
-
+            text-decoration: none;
             &:hover{
                 background-color: var(--color-main);
                 color: #000;
+            }
+
+            img{
+                display: none;
+            }
+          
+        }
+
+        &_link{
+            width: 190px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            svg{
+                font-size: 32px;
+                color:  var(--color-main);
+                cursor: pointer;
+
             }
         }
     }
@@ -65,11 +86,30 @@
     }
 }
 
+@media only screen and (min-width: 650px){
+
+
+    .home_contact-me_link{
+        width: 190px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: aqua;
+        justify-content: space-between;
+        margin-top: 15px;
+        svg{
+            font-size:28;
+            color:  var(--color-main);
+            cursor: pointer;
+        }
+    }
+}
 @media only screen and (min-width: 550px){
     .home_text-wrapper h1{
         font-size: 3rem;
         line-height: 5rem;
     }
+
 }
 
 @media only screen and (min-width: 551px) and (max-width: 768px){

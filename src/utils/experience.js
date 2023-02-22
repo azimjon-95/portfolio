@@ -27,4 +27,9 @@ export const education = [
     title: "WebBrain IT Academy",
     desc: "Web developement,",
   },
+  {
+    text: "2014",
+    subTitle: "Moscow",
+    title: "English school ITEC",
+  },
 ];
