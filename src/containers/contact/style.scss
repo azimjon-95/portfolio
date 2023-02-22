@@ -109,9 +109,12 @@
     @media only screen and (max-width: 768px) {
         .contact_content_form{
             text-align: center;
+            overflow: hidden;
     
             &_controlsWrapper{
                 grid-template-columns: repeat(1, 1fr);
+            overflow: hidden;
+
             }
         }
     }

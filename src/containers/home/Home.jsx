@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
-import { PDFDownloadLink } from "@react-pdf/renderer";
+import { FiEye } from "react-icons/fi";
 import loptop from "../../assets/img/loptop.png";
+
 const Home = ({ toggleIcon }) => {
   const navigate = useNavigate();
 
@@ -53,11 +54,25 @@ const Home = ({ toggleIcon }) => {
           transform: "translateX(0px)",
         }}
       >
-        <div className="home_contact-me_link">
-          <BsInstagram />
-          <BsTelegram />
-          <AiFillLinkedin />
-          <BsGithub />
+        <div className="home_contact-me_box">
+          <div className="home_contact-me_box_link">
+            <a href="https://www.instagram.com/invites/contact/?i=1u52w3nkvjgd8&utm_content=n9sgbj">
+              <BsInstagram />
+            </a>
+            <a href="http://t.me/azimjon_m">
+              <BsTelegram />
+            </a>
+            <a href="https://www.linkedin.com/in/azimjon-mamutaliyev-a19878266/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/azimjon-95">
+              <BsGithub />
+            </a>
+          </div>
+          <div className="home_contact-me_box_eye">
+            <FiEye />
+            34
+          </div>
         </div>
       </Animate>
     </section>
