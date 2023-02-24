@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useState } from "react";
 import "./style.scss";
 import { Animate } from "react-simple-animate";
 import { useNavigate } from "react-router-dom";
@@ -7,13 +7,31 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FiEye } from "react-icons/fi";
 import loptop from "../../assets/img/loptop.png";
+import axios from "../../api/index";
+import { useParams } from "react-router-dom";
 
 const Home = ({ toggleIcon }) => {
   const navigate = useNavigate();
 
+  // const { _id } = useParams();
   const handleNavigate = () => {
     navigate("/contact");
   };
+
+  // const [data, setData] = useState();
+  // console.log(data.view);
+
+  // useEffect(() => {
+  //   axios
+  //     .get(`/products}`)
+  //     .then(({ data: { data } }) => {
+  //       setData(data);
+  //     })
+  //     .catch((e) => {
+  //       console.log("error: ", e);
+  //     });
+  //   axios.patch(`/products/view/${id}`);
+  // }, []);
 
   return (
     <section id="home" className={`home ${toggleIcon ? "active" : ""}`}>
@@ -69,10 +87,14 @@ const Home = ({ toggleIcon }) => {
               <BsGithub />
             </a>
           </div>
-          <div className="home_contact-me_box_eye">
-            <FiEye />
-            34
-          </div>
+
+          {/* {data?.map((value) => (
+            <div key={value.id} className="home_contact-me_box_eye">
+              <FiEye />
+              {value.idWive}
+              {value.view}
+            </div>
+          ))} */}
         </div>
       </Animate>
     </section>
