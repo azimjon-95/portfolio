@@ -21,16 +21,20 @@ const About = () => {
             duration={1.5}
             delay={1}
             start={{
-              transform: "translateX(-900px)",
+              transform: "translateX(-300px)",
+              opacity: 0,
             }}
             end={{
               transform: "translateX(0px)",
+              opacity: 1,
             }}
           >
-            <h3>MERN stack Developer</h3>
-            {personalData?.map((value, inx) => {
-              return <p key={inx}>{value.jobSummary}</p>;
-            })}
+            <div className="stack">
+              <h3>MERN stack Developer</h3>
+              {personalData?.map((value, inx) => {
+                return <p key={inx}>{value.jobSummary}</p>;
+              })}
+            </div>
           </Animate>
 
           <Animate
@@ -38,10 +42,12 @@ const About = () => {
             duration={1}
             delay={1}
             start={{
-              transform: "translateX(-900px)",
+              transform: "translateX(-300px)",
+              opacity: 0,
             }}
             end={{
               transform: "translateX(0px)",
+              opacity: 1,
             }}
           >
             <h3 className="personalText">Personal Information</h3>
@@ -63,10 +69,12 @@ const About = () => {
             duration={1.5}
             delay={1}
             start={{
-              transform: "translateX(600px)",
+              transform: "translateX(300px)",
+              opacity: 0,
             }}
             end={{
               transform: "translatex(0px)",
+              opacity: 1,
             }}
           >
             <div className="about_content_servicesWrapper_innerContent">

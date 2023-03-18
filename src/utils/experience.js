@@ -2,8 +2,8 @@ export const experience = [
   {
     text: "2023",
     subTitle: "Namangan",
-    title: "Project Mussafo",
-    desc: "This project is for sale, Shower Cabin",
+    title: "Mentor at Algoritm Education Center",
+    desc: "Teching students, Building projects",
   },
   {
     text: "2022",

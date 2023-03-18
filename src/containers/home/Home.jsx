@@ -6,32 +6,14 @@ import { BsInstagram, BsTelegram } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FiEye } from "react-icons/fi";
-import loptop from "../../assets/img/loptop.png";
-import axios from "../../api/index";
-import { useParams } from "react-router-dom";
+import Resume from "../../assets/img/resume.jpg";
 
 const Home = ({ toggleIcon }) => {
   const navigate = useNavigate();
 
-  // const { _id } = useParams();
   const handleNavigate = () => {
     navigate("/contact");
   };
-
-  // const [data, setData] = useState();
-  // console.log(data.view);
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`/products}`)
-  //     .then(({ data: { data } }) => {
-  //       setData(data);
-  //     })
-  //     .catch((e) => {
-  //       console.log("error: ", e);
-  //     });
-  //   axios.patch(`/products/view/${id}`);
-  // }, []);
 
   return (
     <section id="home" className={`home ${toggleIcon ? "active" : ""}`}>
@@ -44,32 +26,32 @@ const Home = ({ toggleIcon }) => {
       </div>
       <Animate
         play
-        duration={1.5}
+        duration={3.5}
         delay={1}
         start={{
-          transform: "translateY(550px)",
+          opacity: "0",
         }}
         end={{
-          transform: "translateX(0px)",
+          opacity: "1",
         }}
       >
         <div className="home_contact-me">
           <a onClick={handleNavigate}>Hire me</a>
-          <a href={loptop} download="loptop">
-            <img src={loptop} alt="loptop" />
+          <a href={Resume} download="Resume">
+            <img src={Resume} alt="Resume" />
             Download Resume
           </a>
         </div>
       </Animate>
       <Animate
         play
-        duration={1.5}
+        duration={4.5}
         delay={1}
         start={{
-          transform: "translateX(1800px)",
+          opacity: "0",
         }}
         end={{
-          transform: "translateX(0px)",
+          opacity: "1",
         }}
       >
         <div className="home_contact-me_box">
@@ -88,13 +70,10 @@ const Home = ({ toggleIcon }) => {
             </a>
           </div>
 
-          {/* {data?.map((value) => (
-            <div key={value.id} className="home_contact-me_box_eye">
-              <FiEye />
-              {value.idWive}
-              {value.view}
-            </div>
-          ))} */}
+          <div className="home_contact-me_box_eye">
+            <FiEye />
+            83
+          </div>
         </div>
       </Animate>
     </section>

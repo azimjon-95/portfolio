@@ -41,9 +41,11 @@ const Contact = () => {
           delay={0}
           start={{
             transform: "translateX(-200px)",
+            opacity: 0,
           }}
           end={{
             transform: "translateX(0px)",
+            opacity: 1,
           }}
         >
           <h3 className="contact_content_header-text">Let's Tolk</h3>
@@ -54,10 +56,12 @@ const Contact = () => {
           duration={1.5}
           delay={0.5}
           start={{
-            transform: "translateX(200px)",
+            transform: "translateX(150px)",
+            opacity: 0,
           }}
           end={{
             transform: "translateX(0px)",
+            opacity: 1,
           }}
         >
           <div className="contact_content_form">
