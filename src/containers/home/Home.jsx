@@ -11,9 +11,11 @@ import {
 import { BsGithub } from "react-icons/bs";
 import { FiEye } from "react-icons/fi";
 import Resume from "../../assets/img/resume.jpg";
+import { useTranslation } from "react-i18next";
 
 const Home = ({ toggleIcon }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleNavigate = () => {
     navigate("/contact");
@@ -23,9 +25,9 @@ const Home = ({ toggleIcon }) => {
     <section id="home" className={`home ${toggleIcon ? "active" : ""}`}>
       <div className="home_text-wrapper">
         <h1>
-          Hello, I'm Azimjon
+          {t("home.text1")}
           <br />
-          MERN stack developer
+          {t("home.text2")}
         </h1>
       </div>
       <Animate
@@ -41,11 +43,11 @@ const Home = ({ toggleIcon }) => {
       >
         <div className="home_contact-me">
           <a onClick={handleNavigate}>
-            Contact <AiOutlineWechat />
+            {t("home.contact")} <AiOutlineWechat />
           </a>
           <a href={Resume} download="Resume">
             <img src={Resume} alt="Resume" />
-            Download Resume <AiOutlineCloudDownload />
+            {t("home.down")} <AiOutlineCloudDownload />
           </a>
         </div>
       </Animate>

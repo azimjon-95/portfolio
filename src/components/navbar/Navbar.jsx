@@ -7,13 +7,20 @@ import { BsInfoCircle } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { SiCodeproject } from "react-icons/si";
 import { RxResume } from "react-icons/rx";
+import Uz from "../../assets/img/language_uzb.png";
+import Ru from "../../assets/img/laguage_ru.png";
+import Usa from "../../assets/img/language_usa.png";
 import logo from "../../assets/icons/logo.png";
 import { Animate } from "react-simple-animate";
+import { useState } from "react";
+import i18n from "../../language/i18next";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ toggleIcon, setToggleIcon }) => {
-  const handleToggleIcon = () => {
-    setToggleIcon((i) => !i);
-  };
+  const [open, setOpen] = useState(false);
+
+  const { t } = useTranslation();
+
   return (
     <div className="Conatiner">
       <nav className={`navbar ${toggleIcon ? "active" : ""}`}>
@@ -23,6 +30,27 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
               <img src={logo} alt="" />
             </Link>
           </div>
+
+          <div onClick={() => setOpen(!open)} className="language">
+            {open ? (
+              <div
+                onClick={() => i18n.changeLanguage("usa")}
+                className="language_Img-box"
+              >
+                {" "}
+                <img src={Uz} alt="" />
+              </div>
+            ) : (
+              <div
+                onClick={() => i18n.changeLanguage("uz")}
+                className="language_Img-box"
+              >
+                {" "}
+                <img src={Usa} alt="" />
+              </div>
+            )}
+          </div>
+
           <ul className="navbar_conatiner_menu">
             {navData?.map((value, inx) => {
               return (
@@ -36,40 +64,39 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
               );
             })}
           </ul>
-          {/* <div className="nav-icon" onClick={handleToggleIcon}>
-            {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
-          </div> */}
         </div>
+
         <ul className="navbar_mobil_menu ">
           <Link className="navbar_mobil_menu_item" to="/about">
             <b>
               <BsInfoCircle />
             </b>
-            <p className="navbar_mobil_menu_item">ABOUT ME</p>
+            <p className="navbar_mobil_menu_item">{t("nav.about")}</p>
           </Link>
-          <Link className="navbar_mobil_menu_item" to="/skills">
+
+          <Link className="navbar_mobil_menu_item" to="/resume">
             <b>
-              <GiSkills />
+              <RxResume />
             </b>
-            <p className="navbar_mobil_menu_item">SKILLS</p>
+            <p className="navbar_mobil_menu_item">{t("nav.resume")}</p>
           </Link>
           <Link className="navbar_mobil_menu_item  Home-menu" to="/">
             <b>
               <AiOutlineHome />
             </b>
-            <p className="navbar_mobil_menu_item">HOME</p>
+            <p className="navbar_mobil_menu_item">{t("nav.home")}</p>
           </Link>
-          <Link className="navbar_mobil_menu_item" to="/resume">
+          <Link className="navbar_mobil_menu_item" to="/skills">
             <b>
-              <RxResume />
+              <GiSkills />
             </b>
-            <p className="navbar_mobil_menu_item">RESUME</p>
+            <p className="navbar_mobil_menu_item">{t("nav.skills")}</p>
           </Link>
           <Link className="navbar_mobil_menu_item" to="/portfolio">
             <b>
               <SiCodeproject />
             </b>
-            <p className="navbar_mobil_menu_item">PROJECTS</p>
+            <p className="navbar_mobil_menu_item">{t("nav.projects")}</p>
           </Link>
         </ul>
       </nav>

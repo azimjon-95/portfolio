@@ -3,8 +3,11 @@ import "./style.scss";
 import Header from "../../components/pageHeaderContent/Header";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { Animate } from "react-simple-animate";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [user, setUser] = useState({
     name: "",
     message: "",

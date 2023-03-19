@@ -1,0 +1,16 @@
+{
+    "l":"usa",
+    "nav":{
+        "about": "ABOUT ME",
+        "skills": "SKILLS",
+        "home": "HOME",
+        "resume": "RESUME",
+        "projects": "PROJECTS"
+    },
+    "home":{
+        "text1": "Hello, I'm Azimjon",
+        "text2": "MERN stack developer",
+        "contact": "Contact",
+        "down": " Download Resume"
+    }
+}

@@ -1,3 +1,16 @@
 {
-    "l":"uz"
+    "l":"uz",
+    "nav":{
+        "about": "MEN HAQIMDA",
+        "skills": "KO'NIKMALAR",
+        "home": "ASOSIY",
+        "resume": "REZYUME",
+        "projects": "LOYHALAR"
+    },
+    "home":{
+        "text1": "Salom, Man Azimjon",
+        "text2": "MERN stack Dasturchi man",
+        "contact": "Aloqa uchun",
+        "down": "Yuklab olish"
+    }
 }
