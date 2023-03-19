@@ -3,7 +3,11 @@ import "./style.scss";
 import { Animate } from "react-simple-animate";
 import { useNavigate } from "react-router-dom";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
-import { AiFillLinkedin, AiOutlineWechat } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiOutlineWechat,
+  AiOutlineCloudDownload,
+} from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FiEye } from "react-icons/fi";
 import Resume from "../../assets/img/resume.jpg";
@@ -41,7 +45,7 @@ const Home = ({ toggleIcon }) => {
           </a>
           <a href={Resume} download="Resume">
             <img src={Resume} alt="Resume" />
-            Download Resume
+            Download Resume <AiOutlineCloudDownload />
           </a>
         </div>
       </Animate>
