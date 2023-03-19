@@ -2,8 +2,11 @@ import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
 import { navData } from "../../utils/navbar";
-import { FaBars } from "react-icons/fa";
-import { HiX } from "react-icons/hi";
+import { AiOutlineHome } from "react-icons/ai";
+import { BsInfoCircle } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
+import { SiCodeproject } from "react-icons/si";
+import { RxResume } from "react-icons/rx";
 import logo from "../../assets/icons/logo.png";
 import { Animate } from "react-simple-animate";
 
@@ -20,7 +23,7 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
               <img src={logo} alt="" />
             </Link>
           </div>
-          <ul className={`navbar_conatiner_menu ${toggleIcon ? "active" : ""}`}>
+          <ul className="navbar_conatiner_menu">
             {navData?.map((value, inx) => {
               return (
                 <Link
@@ -33,35 +36,41 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
               );
             })}
           </ul>
-          <div className="nav-icon" onClick={handleToggleIcon}>
+          {/* <div className="nav-icon" onClick={handleToggleIcon}>
             {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
-          </div>
+          </div> */}
         </div>
-        <ul className={`navbar_mobil_menu ${toggleIcon ? "active" : ""}`}>
-          {navData?.map((value, inx) => {
-            return (
-              <Animate
-                play
-                duration={1.5}
-                delay={1}
-                start={{
-                  transform: "translateY(550px)",
-                }}
-                end={{
-                  transform: "translateX(0px)",
-                }}
-                key={inx}
-              >
-                <Link
-                  className="navbar_mobil_menu_item_links"
-                  to={value?.to}
-                  onClick={() => setToggleIcon(false)}
-                >
-                  <li className="navbar_mobil_menu_item">{value?.name}</li>
-                </Link>
-              </Animate>
-            );
-          })}
+        <ul className="navbar_mobil_menu ">
+          <Link className="navbar_mobil_menu_item" to="/about">
+            <b>
+              <BsInfoCircle />
+            </b>
+            <p className="navbar_mobil_menu_item">ABOUT ME</p>
+          </Link>
+          <Link className="navbar_mobil_menu_item" to="/skills">
+            <b>
+              <GiSkills />
+            </b>
+            <p className="navbar_mobil_menu_item">SKILLS</p>
+          </Link>
+          <Link className="navbar_mobil_menu_item  Home-menu" to="/">
+            <b>
+              <AiOutlineHome />
+            </b>
+            <p className="navbar_mobil_menu_item">HOME</p>
+          </Link>
+          <Link className="navbar_mobil_menu_item" to="/resume">
+            <b>
+              <RxResume />
+            </b>
+            <p className="navbar_mobil_menu_item">RESUME</p>
+          </Link>
+          <Link className="navbar_mobil_menu_item" to="/portfolio">
+            <b>
+              <SiCodeproject />
+            </b>
+            <p className="navbar_mobil_menu_item">PROJECTS</p>
+          </Link>
         </ul>
       </nav>
     </div>
