@@ -38,7 +38,7 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
                 className="language_Img-box"
               >
                 {" "}
-                <img src={Uz} alt="" />
+                <img src={Usa} alt="" />
               </div>
             ) : (
               <div
@@ -46,7 +46,7 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
                 className="language_Img-box"
               >
                 {" "}
-                <img src={Usa} alt="" />
+                <img src={Uz} alt="" />
               </div>
             )}
           </div>

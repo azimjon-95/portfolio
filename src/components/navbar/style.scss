@@ -91,7 +91,7 @@
             width: 35px;
             height: 35px;
             display: flex;
-            border: 1px solid #fff;
+            border: 1px solid  var(--color-main);
             border-radius: 50%;
             align-items:center;
             justify-content: center;
@@ -110,7 +110,7 @@
 }
 
 @media screen and (max-width: 770px){
-
+   
     .navbar_mobil_menu{
         display: block;
         width: 100%;
@@ -155,9 +155,15 @@
         }
     }
     .navbar{
-    
+        background: var(--color-nav-bg);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        position: sticky;
+
         &_Box{
-            height: 70px;
+            height: 50px;
             width: 100%;
             display: flex;
             align-items:center;

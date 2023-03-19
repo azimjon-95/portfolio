@@ -8,11 +8,17 @@ import { FaDev, FaDatabase, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about">
-      <Header headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
+      <Header
+        headerText={t("about.about")}
+        icon={<BsInfoCircleFill size={40} />}
+      />
 
       <div className="about_content">
         <div className="about_content_personalWrapper">
@@ -30,7 +36,7 @@ const About = () => {
             }}
           >
             <div className="stack">
-              <h3>MERN stack Developer</h3>
+              <h3>{t("about.title")}</h3>
               {personalData?.map((value, inx) => {
                 return <p key={inx}>{value.jobSummary}</p>;
               })}
@@ -50,7 +56,7 @@ const About = () => {
               opacity: 1,
             }}
           >
-            <h3 className="personalText">Personal Information</h3>
+            <h3 className="personalText">{t("about.info")}</h3>
             <ul>
               {personalData?.slice(0, 5).map((value, inx) => {
                 return (

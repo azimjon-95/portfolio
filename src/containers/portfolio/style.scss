@@ -1,4 +1,6 @@
 .portfolio{
+    padding-bottom: 45px;
+    height: 100%;
     &_text{
         text-align: center;
         font-size: 32px;
@@ -45,7 +47,7 @@
 
 @media only screen and (max-width: 768px) {
 .portfolio{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     height: 100%;
 }
     .portfolio_Cont{

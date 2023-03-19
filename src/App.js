@@ -10,6 +10,7 @@ import Contact from "./containers/contact/Contact";
 import Skills from "./containers/skills/Skills";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+
 import "./App.scss";
 
 const App = () => {

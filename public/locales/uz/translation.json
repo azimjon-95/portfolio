@@ -12,5 +12,10 @@
         "text2": "MERN stack Dasturchi man",
         "contact": "Aloqa uchun",
         "down": "Yuklab olish"
+    },
+    "about":{
+        "title": "MERN stack Dasturchi",
+        "info": "Shaxsiy ma'lumotlar",
+        "about": "Man Haqimda"
     }
 }

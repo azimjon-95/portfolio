@@ -12,5 +12,10 @@
         "text2": "MERN stack developer",
         "contact": "Contact",
         "down": " Download Resume"
+    },
+    "about":{
+        "title": "MERN stack Developer",
+        "info": "Personal Information",
+        "about": "About me"
     }
 }
