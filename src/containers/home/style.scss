@@ -5,8 +5,6 @@
     position: relative;
     z-index: 1;
     height: 100%;
-    width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +39,6 @@
     &_contact-me{
         display: flex;
         justify-content: center;
-        align-items:center;
-
 
         a{
             cursor: pointer;
@@ -53,15 +49,7 @@
             border: 1.5px solid var(--color-main);
             color:  var(--color-main);
             font-weight: 500;
-            display: flex;
-            justify-content: center;
-            align-items:center;
             text-decoration: none;
-
-            svg{
-                font-size: 25px;
-                margin-left: 5px;
-            }
             &:hover{
                 background-color: var(--color-main);
                 color: #000;
@@ -114,8 +102,6 @@
 
         
     }
-
- 
 }
 
 @keyframes typeEffect {
@@ -175,8 +161,7 @@
     .home_contact-me{
         button{
             cursor: pointer;
-            padding: 0;
-            height: 20px;
+            padding: 5px 20px;
             margin: 10px 10px;
             font-size: 1rem;
             background-color: transparent;
@@ -192,9 +177,8 @@
 
             a{
                 cursor: pointer;
-                padding: 0 8px;
-                height: 35px;
-                margin: 10px 10px;
+                padding: 5px 15px;
+                margin: 10px 20px;
                 font-size: 1.6rem;
                 background-color: transparent;
                 border: 1.5px solid var(--color-main);

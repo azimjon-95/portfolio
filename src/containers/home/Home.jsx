@@ -46,7 +46,11 @@ const Home = ({ toggleIcon }) => {
             <a onClick={handleNavigate}>
               {t("home.contact")} <AiOutlineWechat />
             </a>
-            <a href={Resume} download="Resume">
+            <a
+              className="home_contact-me_download"
+              href={Resume}
+              download="Resume"
+            >
               <img src={Resume} alt="Resume" />
               {t("home.down")} <AiOutlineCloudDownload />
             </a>
@@ -81,7 +85,7 @@ const Home = ({ toggleIcon }) => {
 
             <div className="home_contact-me_box_eye">
               <FiEye />
-              83
+              91
             </div>
           </div>
         </Animate>

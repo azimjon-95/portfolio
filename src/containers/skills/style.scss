@@ -8,9 +8,10 @@
     
     &_wrapper{
  
-        width: 250px;
+        width: 270px;
         overflow: hidden;
         margin-top: 22px;
+     
 
         h2{
             font-size: 27px;
@@ -22,7 +23,7 @@
 
         ul {
             list-style-type: none;
-        overflow: hidden;
+            overflow: hidden;
             li{
                 font-size: 19px;
                 color: var(--color-main);

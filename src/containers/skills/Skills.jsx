@@ -18,6 +18,7 @@ import {
   SiMongodb,
   SiPostman,
   SiSwagger,
+  SiPostgresql,
 } from "react-icons/si";
 import { Animate } from "react-simple-animate";
 
@@ -87,12 +88,18 @@ const Skills = () => {
                 <SiExpress />
                 EXPRESS.JS
               </li>
+              <h2>DATABASE</h2>
               <li>
                 <SiMongodb />
                 MONGODB
               </li>
+              <li>
+                <SiPostgresql />
+                POSTGREsQL
+              </li>
             </ul>
           </div>
+
           <div className="style_box_wrapper">
             <h2>TESTING</h2>
             <ul>

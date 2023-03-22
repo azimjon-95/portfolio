@@ -18,7 +18,7 @@ const Resume = () => {
 
       <div className="timeline">
         <div className="timeline_experience">
-          <h3 className="timeline_experience_header">Experience</h3>
+          <h3 className="timeline_experience_header">Work Experience</h3>
           <VerticalTimeline lineColor="var(--color-main)">
             {experience?.map((value, inx) => {
               return (
