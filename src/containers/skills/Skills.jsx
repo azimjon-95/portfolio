@@ -73,7 +73,7 @@ const Skills = () => {
               </li>
               <li>
                 <MdReduceCapacity />
-                REDUC
+                REDUX-TOOLKIT
               </li>
             </ul>
           </div>

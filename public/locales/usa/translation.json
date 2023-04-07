@@ -17,5 +17,16 @@
         "title": "MERN stack Developer",
         "info": "Personal Information",
         "about": "About me"
+    },
+    "portfolio":{
+        "title": "All projects",
+        "name": "Project",
+        "info": "My Portfolio"
+    },
+    "resume":{
+        "title": "My Resume",
+        "name": "Work Experience",
+        "info": "Education",
+        "year": "Year"
     }
 }

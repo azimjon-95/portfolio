@@ -17,5 +17,16 @@
         "title": "MERN stack Dasturchi",
         "info": "Shaxsiy ma'lumotlar",
         "about": "Man Haqimda"
+    },
+    "portfolio":{
+        "title": "Barcha loyihalar",
+        "name": "Loyiha",
+        "info": "Mening loyihalarim"
+    },
+    "resume":{
+        "title": "Mening resumeim",
+        "name": "Ish Tajriba",
+        "info": "Ta'lim",
+        "year": "Yil"
     }
 }

@@ -10,15 +10,21 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experience, education } from "../../utils/experience";
+import { useTranslation } from "react-i18next";
 
 const Resume = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="resume" className="resume">
-      <Header headerText="My Resume" icon={<BsInfoCircleFill size={40} />} />
+      <Header
+        headerText={t("resume.title")}
+        icon={<BsInfoCircleFill size={40} />}
+      />
 
       <div className="timeline">
         <div className="timeline_experience">
-          <h3 className="timeline_experience_header">Work Experience</h3>
+          <h3 className="timeline_experience_header">{t("resume.name")}</h3>
           <VerticalTimeline lineColor="var(--color-main)">
             {experience?.map((value, inx) => {
               return (
@@ -41,7 +47,9 @@ const Resume = () => {
                     <h4 className="">{value.subTitle}</h4>
                   </div>
                   <div className="timeline_experience_Vertical-Time-line_Desc-box">
-                    <h3>Year: {value.text}</h3>
+                    <h3>
+                      {t("resume.year")}: {value.text}
+                    </h3>
                     <i>{value.desc}</i>
                   </div>
                 </VerticalTimelineElement>
@@ -50,7 +58,7 @@ const Resume = () => {
           </VerticalTimeline>
         </div>
         <div className="timeline_education">
-          <h3 className="timeline_experience_header">Education</h3>
+          <h3 className="timeline_experience_header">{t("resume.info")}</h3>
           <VerticalTimeline lineColor="var(--color-main)">
             {education?.map((value, inx) => {
               return (
@@ -73,7 +81,9 @@ const Resume = () => {
                     <h4 className="">{value.subTitle}</h4>
                   </div>
                   <div className="timeline_experience_Vertical-Time-line_Desc-box">
-                    <h3>Year: {value.text}</h3>
+                    <h3>
+                      {t("resume.year")}: {value.text}
+                    </h3>
                     <i>{value.desc}</i>
                   </div>
                 </VerticalTimelineElement>
