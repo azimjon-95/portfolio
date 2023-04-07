@@ -11,12 +11,12 @@ const Portfolio = () => {
 
       <h1 className="portfolio_text">All projects</h1>
       <div className="portfolio_Cont">
-        {allProjects?.map(({ name, image }, inx) => {
+        {allProjects?.map(({ name, image, link }, inx) => {
           return (
-            <div key={inx} className="portfolio_Cont_product">
+            <a href={link} key={inx} className="portfolio_Cont_product">
               <a href="">Project {name}</a>
               <img src={image} alt="" />
-            </div>
+            </a>
           );
         })}
       </div>

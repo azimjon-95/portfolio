@@ -46,11 +46,7 @@ const Home = ({ toggleIcon }) => {
             <a onClick={handleNavigate}>
               {t("home.contact")} <AiOutlineWechat />
             </a>
-            <a
-              className="home_contact-me_download"
-              href={Resume}
-              download="Resume"
-            >
+            <a className="home_contact-me_download" href={Resume}>
               <img src={Resume} alt="Resume" />
               {t("home.down")} <AiOutlineCloudDownload />
             </a>

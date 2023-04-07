@@ -6,10 +6,12 @@ export const allProjects = [
     id: 1,
     name: "Houzing",
     image: hous,
+    link: "https://houzing-demo.netlify.app/",
   },
   {
     id: 2,
     name: "Mussafo",
     image: kabina,
+    link: "olma-uz-frontend.vercel.app",
   },
 ];
