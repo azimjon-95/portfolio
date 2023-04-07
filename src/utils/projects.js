@@ -12,6 +12,6 @@ export const allProjects = [
     id: 2,
     name: "Mussafo",
     image: kabina,
-    link: "olma-uz-frontend.vercel.app",
+    link: "https://olma-uz-frontend.vercel.app",
   },
 ];
