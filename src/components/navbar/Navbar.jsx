@@ -53,19 +53,21 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
 
           <ul className="navbar_conatiner_menu">
             <Link className="navbar_conatiner_menu_item_links" to="/about">
-              <li className="navbar_conatiner_menu_item">ABOUT ME</li>
+              <li className="navbar_conatiner_menu_item">{t("nav.about")}</li>
             </Link>
             <Link className="navbar_conatiner_menu_item_links" to="/skills">
-              <li className="navbar_conatiner_menu_item">SKILLS</li>
+              <li className="navbar_conatiner_menu_item">{t("nav.resume")}</li>
             </Link>
             <Link className="navbar_conatiner_menu_item_links" to="/">
-              <li className="navbar_conatiner_menu_item">HOME</li>
+              <li className="navbar_conatiner_menu_item">{t("nav.home")}</li>
             </Link>
             <Link className="navbar_conatiner_menu_item_links" to="/resume">
-              <li className="navbar_conatiner_menu_item">RESUME</li>
+              <li className="navbar_conatiner_menu_item">{t("nav.skills")}</li>
             </Link>
             <Link className="navbar_conatiner_menu_item_links" to="/portfolio">
-              <li className="navbar_conatiner_menu_item">PROJECTS</li>
+              <li className="navbar_conatiner_menu_item">
+                {t("nav.projects")}
+              </li>
             </Link>
           </ul>
         </div>
