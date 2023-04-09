@@ -9,12 +9,12 @@
     },
     "home":{
         "text1": "Salom, Man Azimjon",
-        "text2": "MERN stack Dasturchi man",
+        "text2": "Full stack Dasturchi man",
         "contact": "Aloqa uchun",
         "down": "Yuklab olish"
     },
     "about":{
-        "title": "MERN stack Dasturchi",
+        "title": "Full stack Dasturchi",
         "info": "Shaxsiy ma'lumotlar",
         "about": "Man Haqimda"
     },
@@ -28,5 +28,13 @@
         "name": "Ish Tajriba",
         "info": "Ta'lim",
         "year": "Yil"
+    },
+    "forMe":{
+        "title": "Men 1995 yilda Namangan shahrida tug'ilganman.  Men Frontend va Backend Dasturchiman.  Men hozirgacha haqiqiy loyihada ishtirok etganman.  Men o'z ishimga juda mas'uliyatliman va jamoam bilan osongina hamkorlik qila olaman.",
+        "name": "FIO",
+        "Age": "Yosh",
+        "Address": "Address",
+        "Email": "Email",
+        "Contact": "Tel No"
     }
 }

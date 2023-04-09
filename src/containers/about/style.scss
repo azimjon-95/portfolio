@@ -81,37 +81,40 @@
                 animation: rotation 10s linear 1s infinite;
                 div:nth-child(1){
                     position: absolute;
-                    top: -9%;
-                    left: 45%;
+                    top: -7%;
+                    left: 35%;
                 }
                 div:nth-child(2){
                     position: absolute;
-                    right: -4%;
-                    top: 61.5%;
+                    right: 6%;
+                    top: 76%;
 
                 }
                 div:nth-child(3){
                     position: absolute;
                     bottom: -32px;
-                    left: 45%;
+                    left: 35%;
 
                 }
                 div:nth-child(4){
                     position: absolute;
-                    top: 65%;
-                    left: -7px;
+                    top: 60%;
+                    left: -15px;
 
                 }
                 div:nth-child(5){
                     position: absolute;
                     top: 50px;
-                    left: -2px;
-
                 }
                 div:nth-child(6){
                     position: absolute;
-                    top: 55px;
-                    right: -7px;
+                    top: 115px;
+                    right: -22px;
+                }
+                div:nth-child(7){
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
                 }
             }
         }

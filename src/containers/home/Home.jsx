@@ -21,6 +21,8 @@ const Home = ({ toggleIcon }) => {
     navigate("/contact");
   };
 
+  const view = Math.floor(Math.random() * 1000);
+
   return (
     <>
       <section id="home" className={`home ${toggleIcon ? "active" : ""}`}>
@@ -81,7 +83,7 @@ const Home = ({ toggleIcon }) => {
 
             <div className="home_contact-me_box_eye">
               <FiEye />
-              91
+              {view}
             </div>
           </div>
         </Animate>

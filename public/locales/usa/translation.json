@@ -9,12 +9,12 @@
     },
     "home":{
         "text1": "Hello, I'm Azimjon",
-        "text2": "MERN stack developer",
+        "text2": "Full stack developer",
         "contact": "Contact",
         "down": " Download Resume"
     },
     "about":{
-        "title": "MERN stack Developer",
+        "title": "Full stack Developer",
         "info": "Personal Information",
         "about": "About me"
     },
@@ -28,5 +28,12 @@
         "name": "Work Experience",
         "info": "Education",
         "year": "Year"
+    },"forMe":{
+        "title": "Iwas born 1995 in Namangan. I'm Frontend & Backend Developer. I have taken part in real project so far. I am so responsible towards my job and I can easily collaborate with my team.",
+        "name": "Name",
+        "Age": "Age",
+        "Address": "Address",
+        "Email": "Email",
+        "Contact": "Contact No"
     }
 }

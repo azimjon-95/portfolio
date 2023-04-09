@@ -2,17 +2,17 @@ import React from "react";
 import Header from "../../components/pageHeaderContent/Header";
 import { BsInfoCircleFill } from "react-icons/bs";
 import "./style.scss";
-import { personalData } from "../../utils/forMe";
 import { Animate } from "react-simple-animate";
 import { FaDev, FaDatabase, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
+import { DiPostgresql } from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { t } = useTranslation();
-
+  const date = new Date();
   return (
     <section id="about" className="about">
       <Header
@@ -37,9 +37,7 @@ const About = () => {
           >
             <div className="stack">
               <h3>{t("about.title")}</h3>
-              {personalData?.map((value, inx) => {
-                return <p key={inx}>{value.jobSummary}</p>;
-              })}
+              <p>{t("forMe.title")}</p>;
             </div>
           </Animate>
 
@@ -58,14 +56,26 @@ const About = () => {
           >
             <h3 className="personalText">{t("about.info")}</h3>
             <ul>
-              {personalData?.slice(0, 5).map((value, inx) => {
-                return (
-                  <li key={inx}>
-                    <span className="title">{value.text}:</span>
-                    <span className="value">{value.title}</span>
-                  </li>
-                );
-              })}
+              <li>
+                <span className="title">{t("forMe.name")}:</span>
+                <span className="value">Azimjon Mamutaliev</span>
+              </li>
+              <li>
+                <span className="title">{t("forMe.Age")}:</span>
+                <span className="value">{date.getFullYear() - 1995}</span>
+              </li>
+              <li>
+                <span className="title">{t("forMe.Address")}:</span>
+                <span className="value">Uzbekistan Namangan</span>
+              </li>
+              <li>
+                <span className="title">{t("forMe.Email")}:</span>
+                <span className="value">mamutaliyev95@gmail.com</span>
+              </li>
+              <li>
+                <span className="title">{t("forMe.Contact")}:</span>
+                <span className="value">+998 94 432 44 54</span>
+              </li>
             </ul>
           </Animate>
         </div>
@@ -101,6 +111,9 @@ const About = () => {
               </div>
               <div>
                 <IoLogoNodejs size={60} color="var(--color-main)" />
+              </div>
+              <div>
+                <DiPostgresql size={70} color="var(--color-main)" />
               </div>
             </div>
           </Animate>

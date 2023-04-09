@@ -73,7 +73,7 @@ const Skills = () => {
               </li>
               <li>
                 <MdReduceCapacity />
-                REDUX-TOOLKIT
+                REDUX-toolkit
               </li>
             </ul>
           </div>
@@ -90,6 +90,10 @@ const Skills = () => {
               </li>
               <h2>DATABASE</h2>
               <li>
+                <TbBrandFirebase />
+                FIREBASE
+              </li>
+              <li>
                 <SiMongodb />
                 MONGODB
               </li>
@@ -103,10 +107,6 @@ const Skills = () => {
           <div className="style_box_wrapper">
             <h2>TESTING</h2>
             <ul>
-              <li>
-                <TbBrandFirebase />
-                FIREBASE
-              </li>
               <li>
                 <SiPostman />
                 POSTMAN

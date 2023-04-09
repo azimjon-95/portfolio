@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
-import { navData } from "../../utils/navbar";
+
 import { AiOutlineHome } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
@@ -52,17 +52,21 @@ const Navbar = ({ toggleIcon, setToggleIcon }) => {
           </div>
 
           <ul className="navbar_conatiner_menu">
-            {navData?.map((value, inx) => {
-              return (
-                <Link
-                  key={inx}
-                  className="navbar_conatiner_menu_item_links"
-                  to={value?.to}
-                >
-                  <li className="navbar_conatiner_menu_item">{value?.name}</li>
-                </Link>
-              );
-            })}
+            <Link className="navbar_conatiner_menu_item_links" to="/about">
+              <li className="navbar_conatiner_menu_item">ABOUT ME</li>
+            </Link>
+            <Link className="navbar_conatiner_menu_item_links" to="/skills">
+              <li className="navbar_conatiner_menu_item">SKILLS</li>
+            </Link>
+            <Link className="navbar_conatiner_menu_item_links" to="/">
+              <li className="navbar_conatiner_menu_item">HOME</li>
+            </Link>
+            <Link className="navbar_conatiner_menu_item_links" to="/resume">
+              <li className="navbar_conatiner_menu_item">RESUME</li>
+            </Link>
+            <Link className="navbar_conatiner_menu_item_links" to="/portfolio">
+              <li className="navbar_conatiner_menu_item">PROJECTS</li>
+            </Link>
           </ul>
         </div>
 
