@@ -11,12 +11,15 @@
     &_Cont{
         width: 100%;
         display: flex;
-        padding: 10px 25px;
-        justify-content: space-evenly;
+        padding: 10px 100px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 45px;
+        align-items: center;
 
 
         &_product{
-            width: 45%;
+            width: 48%;
             height: 350px;
             overflow: hidden;
             display: flex;
