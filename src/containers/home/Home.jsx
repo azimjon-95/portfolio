@@ -15,8 +15,20 @@ import goo2 from "../../assets/img/re3.jpg";
 import goo3 from "../../assets/img/re4.jpg";
 import goo4 from "../../assets/img/re5.png";
 import goo5 from "../../assets/img/re6.jpg";
+import goo6 from "../../assets/img/re7.jpg";
+import mob1 from "../../assets/img/mob1.jpg";
+import mob2 from "../../assets/img/mob2.jpg";
+import mob3 from "../../assets/img/mob3.jpg";
+import mob4 from "../../assets/img/mob4.jpg";
+import mob5 from "../../assets/img/mob5.jpg";
+import mob6 from "../../assets/img/mob6.jpg";
+import mob7 from "../../assets/img/mob7.jpg";
+import mob8 from "../../assets/img/mob8.jpg";
+import mob9 from "../../assets/img/mob9.jpg";
+import mob10 from "../../assets/img/mob10.jpg";
 
-const dataImgs = [goo, goo1, goo2, goo3, goo4, goo5];
+const dataImgs = [goo, goo1, goo2, goo3, goo4, goo5, goo6];
+const MobImgs = [mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10];
 
 const Home = ({ toggleIcon }) => {
   const navigate = useNavigate();
@@ -26,6 +38,7 @@ const Home = ({ toggleIcon }) => {
   };
 
   const [state, setState] = useState(0);
+  const [mob, setSmob] = useState(0);
 
   const changeImage = () => {
     const randomNumber = Math.floor(Math.random() * dataImgs.length);
@@ -35,7 +48,13 @@ const Home = ({ toggleIcon }) => {
     changeImage();
   }, []);
 
-  console.log(state);
+  const changeImagemob = () => {
+    const randomNumber = Math.floor(Math.random() * MobImgs.length);
+    setSmob(randomNumber);
+  };
+  useEffect(() => {
+    changeImagemob();
+  }, []);
 
   const view = Math.floor(Math.random() * 1000);
 
@@ -108,6 +127,7 @@ const Home = ({ toggleIcon }) => {
         </Animate>
       </section>
       <img className="ddd" src={dataImgs[state]} alt="" />
+      <img className="mob" src={MobImgs[mob]} alt="" />
       <div className="blur"></div>
     </>
   );
