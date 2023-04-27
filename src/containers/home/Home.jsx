@@ -26,11 +26,17 @@ import mob7 from "../../assets/img/mob7.jpg";
 import mob8 from "../../assets/img/mob8.jpg";
 import mob9 from "../../assets/img/mob9.jpg";
 import mob10 from "../../assets/img/mob10.jpg";
+import Bg from '../../assets/eee.mp4'
 
 const dataImgs = [goo, goo1, goo2, goo3, goo4, goo5, goo6];
-const MobImgs = [mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10];
+const MobImgs = [mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, Bg];
+// const MobImgs = [Bg];
+
+
 
 const Home = ({ toggleIcon }) => {
+
+
   const navigate = useNavigate();
   const { t } = useTranslation();
   const handleNavigate = () => {
@@ -127,7 +133,18 @@ const Home = ({ toggleIcon }) => {
         </Animate>
       </section>
       <img className="ddd" src={dataImgs[state]} alt="" />
-      <img className="mob" src={MobImgs[mob]} alt="" />
+
+      {/* <img className="mob" src={MobImgs[mob]} alt="" /> */}
+
+      {
+        mob === MobImgs.length - 1 ?
+          <video controls muted loop autoPlay className="mob" src={MobImgs[mob]}></video>
+          :
+          // <video controls muted loop autoPlay className="mob" src={MobImgs[mob]}></video>
+          <img className="mob" src={MobImgs[mob]} alt="" />
+
+      }
+
       <div className="blur"></div>
     </>
   );
