@@ -30,7 +30,7 @@ import Bg from '../../assets/eee.mp4'
 
 const dataImgs = [goo, goo1, goo2, goo3, goo4, goo5, goo6];
 const MobImgs = [mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, Bg];
-// const MobImgs = [Bg];
+
 
 
 
@@ -91,7 +91,8 @@ const Home = ({ toggleIcon }) => {
             </a>
             <a
               className="home_contact-me_download"
-              href="https://www.canva.com/design/DAFbl_hB-Rk/9NYeEQVu1KZmPx8sqJUWiQ/view?utm_content=DAFbl_hB-Rk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              href="https://www.canva.com/design/DAFbl_hB-Rk/9NYeEQVu1KZmPx8sqJUWiQ/view?utm_content=DAFbl_hB-Rk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
+            // href="https://www.canva.com/design/DAFbl_hB-Rk/9NYeEQVu1KZmPx8sqJUWiQ/view?utm_content=DAFbl_hB-Rk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
             >
               <img src="" alt="Resume" />
               {t("home.down")} <FiArrowUpRight />
@@ -133,16 +134,12 @@ const Home = ({ toggleIcon }) => {
         </Animate>
       </section>
       <img className="ddd" src={dataImgs[state]} alt="" />
-
-      {/* <img className="mob" src={MobImgs[mob]} alt="" /> */}
-
       {
         mob === MobImgs.length - 1 ?
           <video controls muted loop autoPlay className="mob" src={MobImgs[mob]}></video>
           :
-          // <video controls muted loop autoPlay className="mob" src={MobImgs[mob]}></video>
-          <img className="mob" src={MobImgs[mob]} alt="" />
 
+          <img className="mob" src={MobImgs[mob]} alt="" />
       }
 
       <div className="blur"></div>

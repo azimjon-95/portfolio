@@ -28,6 +28,12 @@ const Contact = () => {
     let api = new XMLHttpRequest();
     api.open("GET", tempUrl, true);
     api.send();
+
+    setUser({
+      name: "",
+      message: "",
+      tel: "+998",
+    })
   };
 
   return (
